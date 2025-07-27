@@ -1,20 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/index.html</loc>
   </url>
   <url>
-    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/#products</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/about.html</loc>
   </url>
   <url>
-    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/#contact</loc>
-    <lastmod>2025-07-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/products.html</loc>
+  </url>
+  <url>
+    <loc>https://123456789012869.github.io/Jhajee-enterprises.github.io/contact.html</loc>
   </url>
 </urlset>
