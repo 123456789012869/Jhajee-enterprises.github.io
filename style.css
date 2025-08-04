@@ -1,79 +1,115 @@
+/* ✅ Basic Styling */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-}
-
-header {
-  background: #333;
+  font-family: 'Poppins', sans-serif;
   color: white;
-  padding: 15px;
-  text-align: center;
+  background: #111;
+  overflow-x: hidden;
 }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 50px;
-  background: #555;
-  color: white;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-/* ✅ Floating WhatsApp Button */
-.whatsapp-float {
+/* ✅ Animated Background */
+.background {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ✅ Navbar */
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: #ffb703;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ✅ Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
-.whatsapp-float img {
-  width: 40px;
-  height: 40px;
+.hero h2 {
+  font-size: 38px;
+  font-weight: bold;
+  animation: fadeUp 1.5s ease-in-out;
+}
+
+.hero .sub-text {
+  font-size: 18px;
+  margin-top: 10px;
+  animation: fadeUp 2s ease-in-out;
+}
+
+.cta-btn {
+  background: #ffb703;
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* ✅ Floating Menu */
+.floating-menu {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-menu a {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.floating-menu a:hover {
+  background: #ffb703;
+  color: black;
+}
+
+/* ✅ Fade Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
